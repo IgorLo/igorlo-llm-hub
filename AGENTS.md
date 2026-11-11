@@ -8,7 +8,7 @@ Apply the project's local contracts, commands and release policy. Read only the 
 | --- | --- |
 | Start a frontend application or explicitly migrate its stack | [Frontend profile](profiles/frontend.md) |
 | Change behavior, fix a regression, set up CI or assess coverage | [Testing profile](profiles/testing.md) |
-| Select a specialist skill for Svelte, UI, testing or verification | [Upstream skills](skills/catalog.md) |
+| Diagnose a bug, review a diff or select a specialist skill for UI, testing or agent instructions | [Upstream skills](skills/catalog.md) |
 | Report a defect or request a capability from its owner | [File an issue](skills/file-issue/SKILL.md) |
 | Evaluate, implement or close incoming feedback | [Handle an issue](skills/handle-issue/SKILL.md) |
 | Update dependencies in a project or across maintained repositories | [Coordinate updates](skills/update-projects/SKILL.md) |

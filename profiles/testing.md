@@ -2,13 +2,13 @@
 
 Choose the smallest public boundary that can observe the user's behavior. Cover pure business rules and data transformations with Vitest. Use browser tests for focus, touch, component interactions and navigation. Follow the project's existing test layout and keep fixtures small enough to explain the expected result.
 
-For a behavior change, use the reviewed TDD skill. Name the action and observable outcome before writing the assertion. For a regression, reproduce the reported failure, run the test and observe the expected failure on the original behavior. Apply the fix, rerun the same test and exercise neighboring cases that share its cause.
+For a behavior change, use the [reviewed TDD skill](../skills/catalog.md#behavioral-tests). Name the action and observable outcome before writing the assertion. For a regression, reproduce the reported failure, run the test and observe the expected failure on the original behavior. Apply the fix, rerun the same test and exercise neighboring cases that share its cause.
 
 ## Browser acceptance
 
 Run at least one complete primary user journey against the production build on both a narrow touch viewport and a desktop viewport. Use a named project or device for each. Check that the user can reach the action, operate it and see its result. For keyboard interactions also check focus order, activation and return focus where appropriate. Keep the scenario reproducible from a fresh session.
 
-For a hosted preview, repeat the primary journey on the deployment tied to the reviewed PR commit. Record the SHA, URL and outcome. For a library release candidate, exercise its public behavior through a real consumer of the built package and follow the library's own packaging checks.
+For a hosted preview, use [Playwright CLI](../skills/catalog.md#preview-checks) to repeat the primary journey on the deployment tied to the reviewed PR commit. Record the SHA, URL and outcome. For a library release candidate, exercise its public behavior through a real consumer of the built package and follow the library's own packaging checks.
 
 ## Coverage
 
