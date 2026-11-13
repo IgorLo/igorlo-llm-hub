@@ -6,6 +6,9 @@ Apply the project's local contracts, commands and release policy. Read only the 
 
 | Trigger | Read |
 | --- | --- |
+| Connect a project to Hub conventions or investigate missing fleet enrollment | [Connect a project](skills/onboard-project/SKILL.md) |
+| Locate a behavior's owner or coordinate work across repositories | [Repository ownership](profiles/repositories.md) |
+| Consolidate shared and local agent instructions or audit duplicates | [Instruction audit](profiles/instructions.md) |
 | Start or resume Git work, hear about parallel changes, or prepare integration/release | [Git freshness](profiles/git.md) |
 | Start a frontend application or explicitly migrate its stack | [Frontend profile](profiles/frontend.md) |
 | Change behavior, fix a regression, set up CI or assess coverage | [Testing profile](profiles/testing.md) |
