@@ -4,7 +4,7 @@ Use these defaults when creating a site. In an existing repository, apply its ap
 
 ## Application and UI
 
-Start with Svelte 5, SvelteKit, Vite and TypeScript. Use the [Svelte code writer](../skills/catalog.md#svelte-components) when editing components. Use Svelte ASCII UI components and tokens. Before choosing a component or overriding its behavior, read the installed package's `docs/agents/using.md`. When a component needs a change, establish whether the application composition or the library owns it.
+Start with Svelte 5, SvelteKit, Vite and TypeScript. Use the [Svelte code writer](../skills/catalog.md#svelte-components) when editing components. Use Svelte ASCII UI components and tokens. Before choosing a component or overriding its behavior, read the installed package's `docs/agents/using.md`. When a component needs a change, establish whether the application composition or the library owns it using [repository ownership](repositories.md#trace-ownership-and-consumers).
 
 Build the primary task on a narrow touch screen first. Expand the layout when its content benefits from the available width. For interface reviews use [web design guidelines](../skills/catalog.md#interface-review). Exercise long labels, text enlargement and keyboard focus in the actual composition. Validate the main flow using the [testing profile](testing.md).
 
