@@ -46,6 +46,10 @@ Report that a fix or update passed: use [Verification before completion](https:/
 
 [Writing for agents](https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/writing-for-agents/SKILL.md). Use when editing a skill, a routing instruction or a convention that an agent reads.
 
+## Session reflection
+
+[Engineering retro](https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/retro/SKILL.md). Use its environment-analysis checklist for an engineering session, rather than the similarly named product-team retrospective. The [Hub adapter](reflect-session/SKILL.md) adds natural-language routing, evidence/disposition output and the shared-rule/proposal workflow. The upstream procedure is user-invoked; the adapter is discoverable for the reflection request itself.
+
 ## Catalog changes
 
 For a catalog change, inspect the actual skill, linked instructions and tools. Prefer the framework maintainer or an established repository with at least 100 stars. Record the reviewed commit and the local gap. Reuse a matching procedure by reference. Route a proposed new skill or revision through [owner review](propose-convention/SKILL.md).

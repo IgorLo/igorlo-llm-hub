@@ -6,12 +6,14 @@ Apply the project's local contracts, commands and release policy. Read only the 
 
 | Trigger | Read |
 | --- | --- |
+| Start or resume Git work, hear about parallel changes, or prepare integration/release | [Git freshness](profiles/git.md) |
 | Start a frontend application or explicitly migrate its stack | [Frontend profile](profiles/frontend.md) |
 | Change behavior, fix a regression, set up CI or assess coverage | [Testing profile](profiles/testing.md) |
 | Diagnose a bug, review a diff or select a specialist skill for UI, testing or agent instructions | [Upstream skills](skills/catalog.md) |
 | Report a defect or request a capability from its owner | [File an issue](skills/file-issue/SKILL.md) |
 | Evaluate, implement or close incoming feedback | [Handle an issue](skills/handle-issue/SKILL.md) |
 | Update dependencies in a project or across maintained repositories | [Coordinate updates](skills/update-projects/SKILL.md) |
-| A local decision looks reusable, or an existing convention needs revision | [Propose a convention](skills/propose-convention/SKILL.md) |
+| A local decision or user correction looks reusable, or an existing convention needs revision | [Propose a convention](skills/propose-convention/SKILL.md) |
+| Reflect on an engineering session ("проведи рефлексию") or review Hub proposals | [Reflect on a session](skills/reflect-session/SKILL.md) |
 
 Changes to this hub take effect after Igor reviews and merges the PR. Keep private research and deployment details local.

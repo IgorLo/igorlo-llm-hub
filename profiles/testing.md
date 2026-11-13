@@ -8,7 +8,13 @@ For a behavior change, use the [reviewed TDD skill](../skills/catalog.md#behavio
 
 Run at least one complete primary user journey against the production build on both a narrow touch viewport and a desktop viewport. Use a named project or device for each. Check that the user can reach the action, operate it and see its result. For keyboard interactions also check focus order, activation and return focus where appropriate. Keep the scenario reproducible from a fresh session.
 
+For changed UI, inspect screenshots as well as successful actions. Exercise the states and transitions that can affect the requested layout: long/large content, open/closed overlays and scroll start/middle/end as relevant. When an appearing control should preserve layout, compare geometry across that transition. Protect a demonstrated layout regression with an observable browser assertion. Judge density and hierarchy against the requested screen and installed design-system contract.
+
+For default changes, check the fresh entry state and the affected saved settings or named presets against their agreed behavior. List order and initial selection are separate observable outcomes.
+
 For a hosted preview, use [Playwright CLI](../skills/catalog.md#preview-checks) to repeat the primary journey on the deployment tied to the reviewed PR commit. Record the SHA, URL and outcome. For a library release candidate, exercise its public behavior through a real consumer of the built package and follow the library's own packaging checks.
+
+Before sharing a local preview URL, use a managed preview or a background service that survives the launching tool call. In a subsequent call, confirm readiness and run the primary journey against the current build; keep service logs available. For a hosted URL, confirm the browser reached the application. An authentication redirect is an access gap to report, rather than a passing application check.
 
 ## Coverage
 
