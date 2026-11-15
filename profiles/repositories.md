@@ -29,6 +29,8 @@ Verify the checkout's Git root and canonical remote before using it. Follow [Git
 
 ## Trace ownership and consumers
 
+For shared database, migration or infrastructure work, use the repository linked in [backend ownership](backend.md#ownership-and-contracts). Its local contract defines operational commands and releases; the Hub defines shared conventions.
+
 Read the target's `AGENTS.md` and its linked local contracts before assigning work. In a new worker, supply the repository identity, isolated checkout, base SHA, pinned Hub SHA, relevant local instructions, acceptance check and existing authorization for PRs and releases. Verify instruction delivery as described in [onboarding](../skills/onboard-project/SKILL.md#verify-the-entry-points).
 
 Derive package relationships from the current manifests, lockfiles, registry metadata and installed consumer documentation. Confirm a producer from its package identity and repository metadata. For a UI kit, its public components, tokens and internal scrolling behavior belong to the library. Application composition, domain state and product-specific choices belong to the consumer. Read the installed version's consumer guide to establish the boundary for the actual case.
