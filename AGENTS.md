@@ -11,6 +11,9 @@ Apply the project's local contracts, commands and release policy. Read only the 
 | Consolidate shared and local agent instructions or audit duplicates | [Instruction audit](profiles/instructions.md) |
 | Start or resume Git work, hear about parallel changes, or prepare integration/release | [Git freshness](profiles/git.md) |
 | Start a frontend application or explicitly migrate its stack | [Frontend profile](profiles/frontend.md) |
+| Add server logic, persistent data or realtime; connect an application to a shared backend | [Backend profile](profiles/backend.md) |
+| Add or change sign-in, sessions or authorization | [Authentication profile](profiles/auth.md) |
+| Change a database schema, data migration, access policy or stored-file lifecycle; restore data | [Database changes](profiles/database-changes.md) |
 | Change behavior, fix a regression, set up CI or assess coverage | [Testing profile](profiles/testing.md) |
 | Diagnose a bug, review a diff or select a specialist skill for UI, testing or agent instructions | [Upstream skills](skills/catalog.md) |
 | Report a defect or request a capability from its owner | [File an issue](skills/file-issue/SKILL.md) |
