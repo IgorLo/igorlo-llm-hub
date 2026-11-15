@@ -15,11 +15,11 @@ Before provisioning, verify current official terms for every service: payment-ca
 | Owner | Owns |
 | --- | --- |
 | Product repository | Domain behavior, public content, application API and UI composition |
-| Shared backend repository | One migration history, schema, grants/policies, OAuth client registry, infrastructure configuration, release and recovery procedures |
+| [Shared backend repository](https://github.com/IgorLo/igorlo-shared-backend) | One migration history, schema, grants/policies, OAuth client registry, infrastructure configuration, release and recovery procedures |
 | Shared authentication service and adapter | Provider integration, protocol, per-application sessions and verified user/client identity |
 | UI library | Reusable presentation and callbacks; server access decisions belong to the backend |
 
-Keep the operational backend repository private. Public Hub files contain reusable conventions; account identifiers, resource addresses, credentials and user data remain in private project records. Apply [repository ownership](repositories.md) before moving a behavior between owners.
+Keep the operational backend repository private. Read its `AGENTS.md` and current local contracts before operational changes. Public Hub files contain reusable conventions; account identifiers, resource addresses, credentials and user data remain in private project records. Apply [repository ownership](repositories.md) before moving a behavior between owners.
 
 Maintain an application registry in the shared backend: owner, environment, verified client identity, data objects/buckets, allowed operations and contract revision. Each product proposes schema changes to that repository. Product builds do not independently push migrations to the shared database, and normal application credentials cannot perform DDL or administer other products.
 
