@@ -1,11 +1,14 @@
 # Shared engineering conventions
 
+At task start, choose a workflow and an observable completion check. Start with one lead agent and add roles when they address a specific risk or separable piece of work.
+
 For every change, identify the user-visible need, the owner of the behavior and other places affected by the same cause. Scale the investigation to the change. Surface a broader fix for decision when it would expand the agreed scope.
 
 Apply the project's local contracts, commands and release policy. Read only the routes that match the task, at the same hub revision.
 
 | Trigger | Read |
 | --- | --- |
+| Change user-visible behavior or a shared contract, split work, or plan a multi-stage change | [Agent workflows](profiles/agent-workflows.md) |
 | Connect a project to Hub conventions or investigate missing fleet enrollment | [Connect a project](skills/onboard-project/SKILL.md) |
 | Locate a behavior's owner or coordinate work across repositories | [Repository ownership](profiles/repositories.md) |
 | Consolidate shared and local agent instructions or audit duplicates | [Instruction audit](profiles/instructions.md) |
