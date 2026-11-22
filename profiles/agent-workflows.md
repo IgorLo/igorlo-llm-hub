@@ -2,6 +2,14 @@
 
 Choose the workflow from the cost of a missed issue, the available checks and the dependencies between pieces of work. One lead owns the result and revisits the choice when the scope, risk or dependencies change.
 
+## Task readiness
+
+When drafting or picking up an engineering task, use its issue, brief or current chat to capture the problem or purpose, expected outcome and an observable acceptance check. Add relevant evidence, sources of truth and constraints. Record blockers or assumptions when they could change the result. For a clear, small request, the request and its check can serve as the brief.
+
+Before implementing or delegating implementation, confirm the expected outcome, scope and acceptance check for that work. Consult the relevant code, tests, issue history or project contracts to resolve missing facts. If a decision about behavior, scope or a costly trade-off remains, ask the owner a specific question and record the answer in the task before proceeding with dependent work. State any reversible assumption you make.
+
+Start or delegate discovery when you can name the question, bound the investigation and say what evidence or decision it must return. Keep verified facts, hypotheses and open questions distinct. Update the task and recheck readiness when findings change the expected outcome, scope or acceptance check.
+
 | Situation | Workflow |
 | --- | --- |
 | The behavior and its checks are clear, or the changes depend on one another | One implementer runs the project checks and self-reviews the result. |

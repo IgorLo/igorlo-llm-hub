@@ -8,6 +8,7 @@ Apply the project's local contracts, commands and release policy. Read only the 
 
 | Trigger | Read |
 | --- | --- |
+| Draft or pick up an engineering task, or hand off implementation | [Task readiness](profiles/agent-workflows.md#task-readiness) |
 | Change user-visible behavior or a shared contract, split work, or plan a multi-stage change | [Agent workflows](profiles/agent-workflows.md) |
 | Connect a project to Hub conventions or investigate missing fleet enrollment | [Connect a project](skills/onboard-project/SKILL.md) |
 | Locate a behavior's owner or coordinate work across repositories | [Repository ownership](profiles/repositories.md) |
