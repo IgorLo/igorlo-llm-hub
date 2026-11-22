@@ -11,6 +11,7 @@ Apply the project's local contracts, commands and release policy. Read only the 
 | Change user-visible behavior or a shared contract, split work, or plan a multi-stage change | [Agent workflows](profiles/agent-workflows.md) |
 | Connect a project to Hub conventions or investigate missing fleet enrollment | [Connect a project](skills/onboard-project/SKILL.md) |
 | Locate a behavior's owner or coordinate work across repositories | [Repository ownership](profiles/repositories.md) |
+| Start work on source code, or trace definitions and references across files | [Code navigation](profiles/code-navigation.md) |
 | Consolidate shared and local agent instructions or audit duplicates | [Instruction audit](profiles/instructions.md) |
 | Start or resume Git work, hear about parallel changes, or prepare integration/release | [Git freshness](profiles/git.md) |
 | Start a frontend application or explicitly migrate its stack | [Frontend profile](profiles/frontend.md) |
