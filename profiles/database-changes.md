@@ -2,6 +2,20 @@
 
 Use this procedure for schema/data migrations, grants or row-level security, exposed views/RPC, stored-file access/lifecycle changes and data recovery. Follow [Git freshness](git.md), the project's release contract and the [testing profile](testing.md). For a shared backend, read its registry and every affected product contract; [backend ownership](backend.md#ownership-and-contracts) identifies the schema/release owner.
 
+## SQL readability and verification
+
+For hand-written migrations, record the change in observable behavior and
+explain non-obvious grants, role transitions and transaction boundaries.
+Use named fixtures and expected outcomes in database tests. Pin a formatter
+that handles the project's dialect, stored functions and test-runner commands.
+Verify that formatting twice produces identical output and run the formatted
+example against a disposable database before enabling autofix.
+
+Apply formatting checks to new migrations and maintained SQL tests. Preserve
+already applied migration files and document historical context in the migration
+index. After replay, run function linting on every project-owned schema that
+contains code. Include database behavior and upgrade tests in CI.
+
 ## Plan the change
 
 State the user-visible need, owner, affected data/clients and compatibility requirement. Identify the current database/environment and contract revision without exposing credentials. Keep one repository and append-only migration history for the shared database. Product repositories propose changes there; one controlled release path owns DDL credentials.

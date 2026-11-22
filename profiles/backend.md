@@ -10,6 +10,27 @@ Use Vercel for the application and a shared Supabase Free backend for related sm
 
 Before provisioning, verify current official terms for every service: payment-card requirements, account-wide versus per-project quotas, inactivity, persistent storage, connection lifetime and exhaustion behavior. Use the no-card Free/Hobby configuration; a paid add-on or trial is a separate owner decision. Record dated evidence privately and the selected runtime/limits in the product contract. A free plan is not a promise of continuous availability or lossless recovery.
 
+## Server source and tools
+
+For a new TypeScript service, include its HTTP handlers, test clients, browser
+tests, fixtures and operational scripts in strict type checking and type-aware
+linting. Give functions explicit return types. Document the contract at the
+boundary, particularly retry behavior, trust assumptions and failure outcomes.
+Keep code for one decision together. Split a file when its parts have different
+owners or reasons to change.
+
+Pin the formatter and linter in the project. Provide a local autofix command
+and a read-only CI command that fails on warnings or formatting drift. Exercise
+both commands on a real source file during adoption. Package compiled ESM and
+generated declarations for TypeScript libraries and exercise the archive in a
+consumer. A staging client that tests integration should install the same
+artifact as the product.
+
+Apply the [frontend profile](frontend.md) to sustained user-facing screens
+in a backend repository, including acceptance clients. A worker or CLI with
+no UI follows its runtime's conventions. For existing services, agree on the
+migration scope, sample source and release owner before changing the stack.
+
 ## Ownership and contracts
 
 | Owner | Owns |
